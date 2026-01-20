@@ -71,11 +71,6 @@ qemu-system-x86_64 \
   -device virtio-net-pci,netdev=net0
 ```
 
-**What this does:**
-- `-cdrom ubuntu-24.04-desktop-amd64.iso` - mounts your ISO file
-- `-boot d` - boots from CD/DVD drive (the ISO)
-- Uses simple VGA for installation
-
 ### Step 3: Complete the installation
 Install your OS in the window that appears.
 
