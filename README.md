@@ -1,3 +1,17 @@
+## Why QEMU over VirtualBox?
+
+**VirtualBox is a type-2 hypervisor** – it runs on top of your host operating system, which introduces overhead and instability. Many users experience frequent crashes, poor performance, and compatibility issues.
+
+**QEMU with KVM is a type-1 hypervisor** – it runs directly on the hardware via the Linux kernel's KVM module. This means:
+- **Better performance** – near-native speeds since the VM has direct hardware access
+- **More stability** – no crashes from fighting with the host OS
+- **Lower overhead** – less resource waste from the extra abstraction layer
+
+TL;DR: VirtualBox sucks, QEMU/KVM is faster and doesn't crash.
+
+---
+
+
 # QEMU VM Setup Guide
 
 This guide will help you set up and run virtual machines using QEMU at the command line, since we can't use virt-manager at school.
