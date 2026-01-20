@@ -2,10 +2,18 @@
 
 This guide will help you set up and run virtual machines using QEMU at the command line, since we can't use virt-manager at school.
 
+
 ## Prerequisites
 
+### Installing codam-apt
+At Codam, we use codam-apt to install packages. Run this first:
+
+```bash
+wget https://raw.githubusercontent.com/codam-coding-college/codam-apt/main/INSTALL.sh && chmod +x INSTALL.sh && ./INSTALL.sh
+```
+
 ### On Your Host Machine
-- Install SPICE viewer (for GUI): `sudo apt install virt-viewer`
+- Install SPICE viewer (for GUI): `codam-apt install virt-viewer`
 
 ### Inside Your VM (for GUI setup)
 - Install SPICE guest agent: `sudo apt install spice-vdagent`
